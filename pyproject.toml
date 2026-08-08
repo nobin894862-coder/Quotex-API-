@@ -1,1 +1,34 @@
+[project]
+name = "api_quotex"
+version = "2.0.0"
+description = "Quotex API for trading automation"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "A11ksa", email = "ar123ksa@gmail.com"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "playwright>=1.40.0",
+    "websockets>=12.0",
+    "asyncio-mqtt>=0.12.0",
+    "pydantic>=2.0.0",
+    "requests>=2.31.0",
+]
 
+[project.optional-dependencies]
+dev = [
+    "black>=23.0.0",
+    "isort>=5.12.0",
+    "pytest>=7.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/A11ksa/API-Quotex"
+Repository = "https://github.com/A11ksa/API-Quotex"
+Documentation = "https://github.com/A11ksa/API-Quotex/blob/main/README.md"
